@@ -11,3 +11,36 @@
         left: 0;
     }
 }
+@mixin before_circle_center {
+    &:before {
+        content: '';
+        background: $main-color;
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+        position: absolute;
+        top: -25%;
+        z-index: -1;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+@mixin before_circle_about {
+    &:before {
+        content: '';
+        background: $main-color;
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+        position: absolute;
+        top: -12%;
+        z-index: -1;
+        left: -15px;
+    }
+}
+@mixin divider {
+    height: 3px;
+    width: 60px;
+    background-color: $main-color;
+    margin-bottom: 20px;
+}

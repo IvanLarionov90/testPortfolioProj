@@ -1,0 +1,43 @@
+.whatuse {
+    margin-top: 120px;
+    .title_fs36 {
+        text-align: center;
+    }
+    &__title {
+        position: relative;
+        @include before_circle_center;
+        margin-bottom: 12px;
+        text-align: center;
+    }
+    &__divider {
+        margin: 25px auto 0 auto;
+        @include divider;
+    }
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+    &__item {
+        margin: 7px;
+        width: 270px;
+        height: 270px;
+        border: 1px solid;
+        padding: 30px;
+        &:nth-child(4) {
+            padding-top: 55px;
+        }
+        &:nth-child(7) {
+            padding-top: 52px;
+        }
+        .icon {
+            margin-bottom: 20px;
+        }
+        .title {
+            margin-bottom: 15px;
+        }
+        .descr {
+            font-size: 12px;
+        }
+    }
+}
