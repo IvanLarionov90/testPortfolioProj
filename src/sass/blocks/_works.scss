@@ -1,7 +1,16 @@
 .works {
     margin-top: 120px;
+    &__title {
+        position: relative;
+        text-align: center;
+        @include before_circle_center;
+    }
     .title_fs36 {
         text-align: center;
+    }
+    &__divider {
+        margin: 20px auto 0 auto;
+        @include divider;
     }
     &__items {
         display: grid;

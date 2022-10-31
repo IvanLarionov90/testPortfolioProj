@@ -38,6 +38,19 @@
         left: -15px;
     }
 }
+@mixin before_circle_price {
+    &:before {
+        content: '';
+        background: $main-color;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        position: absolute;
+        top: 16%;
+        z-index: -1;
+        left: -25px;
+    }
+}
 @mixin divider {
     height: 3px;
     width: 60px;
