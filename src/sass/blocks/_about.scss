@@ -3,6 +3,7 @@
     padding-top: 120px;
     &__wrapper {
         display: grid;
+        justify-content: center;
         height: 100%;
         width: 100%;
         grid-template-columns: 400px 570px;

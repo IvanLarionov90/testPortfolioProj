@@ -1,0 +1,107 @@
+@media (max-width: 1300px) {
+
+    body {
+        width: 100%;
+    }
+
+    .container {
+        width: 900px;
+    }
+
+    .whatuse {
+        &__items {
+            justify-content: space-between;
+        }
+        .expirience {
+            justify-content: center;
+            grid-template-columns: repeat(2, 350px);
+            grid-template-rows: repeat(3, 70px);
+        }
+    }
+
+    .works {
+        &__items {
+            display: grid;
+            grid-template-columns: repeat(3, 280px);
+            grid-template-rows: repeat(3, 280px);
+            gap: 5px;
+        }
+        &__item {
+            &:nth-child(1) {
+                grid-row: 1/2;
+                grid-column: 1/2;
+            }
+            &:nth-child(2) {
+                grid-row: 1/2;
+                grid-column: 2/3;
+            }
+            &:nth-child(3) {
+                grid-row: 1/2;
+                grid-column: 3/4;
+            }
+            &:nth-child(4) {
+                grid-row: 2/3;
+                grid-column: 3/4;
+            }
+            &:nth-child(5) {
+                grid-row: 2/3;
+                grid-column: 1/2;
+            }
+            &:nth-child(6) {
+                grid-row: 3/4;
+                grid-column: 1/2;
+            }
+        }
+    }
+
+    .price {
+        &__item {
+            width: 366px;
+            height: 45px;
+            padding-left: 10px;
+            &:nth-child(1) {
+                margin-right: 30px;
+            }
+            &:nth-child(2) {
+                margin-right: 30px;
+            }
+            &:nth-child(3) {
+                margin-right: 30px;
+            }
+        }
+    }
+
+    .resume {
+        &__wrapper {
+            padding: 60px 65px 0 65px;
+            display: grid;
+            grid-template-columns: repeat(2, 425px);
+            column-gap: 15px;
+        }
+    }
+
+    .about {
+        height: 720px;
+        padding-top: 120px;
+        &__wrapper {
+            display: grid;
+            height: 100%;
+            width: 100%;
+            grid-template-columns: 400px 520px;
+            grid-template-rows: repeat(3, 300px);
+            column-gap: 10px;
+        }
+    }
+
+    .contacts {
+        &__wrapper {
+            grid-template-columns: 400px 480px;
+            gap: 30px;
+        }
+        &__form {
+            margin-top: 30px;
+            display: grid;
+            grid-template: 45px 190px 45px / repeat(2, 230px);
+        }
+    }
+}
